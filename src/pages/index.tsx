@@ -1,6 +1,14 @@
-import {useHello} from '../hooks/api/hello';
+import Head from "next/head";
 
 export default function Home() {
-	const {data: {time} = {time: Date.now()}} = useHello();
-	return <div>{time}</div>;
+	return (
+		<>
+			<Head>
+				<title>Vegacy Roleplay</title>
+			</Head>
+			<body>
+				<h1 className="text-red-400 text-3xl font-bold">Vegacy</h1>
+			</body>
+		</>
+	);
 }

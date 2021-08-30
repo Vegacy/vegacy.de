@@ -1,7 +1,8 @@
-import React from 'react';
-import {AppProps} from 'next/app';
-import {SWRConfig} from 'swr';
-import {APIResponse, HttpException} from 'nextkit';
+import React from "react";
+import "tailwindcss/tailwind.css";
+import {AppProps} from "next/app";
+import {SWRConfig} from "swr";
+import {APIResponse, HttpException} from "nextkit";
 
 export default function App({Component, pageProps}: AppProps) {
 	return (
