@@ -9,13 +9,16 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.2.1",
+		"@types/aos": "^3.0.4",
+		"aos": "^2.3.4",
 		"autoprefixer": "^10.3.3",
-		"next": "^11.1.1-canary.10",
+		"next": "^11.1.2-canary.0",
 		"nextkit": "^1.0.9",
 		"postcss": "^8.3.6",
-		"react": "17.0.2",
-		"react-dom": "17.0.2",
-		"swr": "^0.5.6",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"swr": "^1.0.0",
 		"tailwindcss": "^2.2.9"
 	},
 	"devDependencies": {
