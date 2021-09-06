@@ -1,11 +1,34 @@
+import {useEffect, useState} from "react";
+
 export default function Navbar() {
+	const [background, setBackground] = useState("");
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+	});
+
 	const showMenu = () => {
 		const menuItems = document.getElementById("items");
 		menuItems?.classList.toggle("hidden");
 	};
 
+	const handleScroll = () => {
+		if (window.pageYOffset > 0) {
+			if (background == "") {
+				setBackground("bg-black bg-opacity-50");
+			}
+		} else {
+			if (background != "") setBackground("");
+		}
+	};
+
 	return (
-		<nav className="flex items-center justify-between flex-wrap p-6 text-white sticky top-0 z-50">
+		<nav
+			id="navbar"
+			className={
+				"flex items-center justify-between flex-wrap p-6 text-white sticky top-0 z-50 " + background
+			}
+		>
 			<div className="flex items-center flex-no-shrink mr-6">
 				<img src="/assets/vegacy-t.png" width="32px"></img>
 				{/* <span className="font-semibold text-xl tracking-tight">Tailwind CSS</span> */}
