@@ -42,7 +42,7 @@ export default function App({Component, pageProps}: AppProps) {
 					crossOrigin="anonymous"
 				/>
 			</Head>
-			<div className="bg-primary">
+			<div className="bg-primary text-white">
 				<Navbar />
 				<Component {...pageProps} />
 			</div>
